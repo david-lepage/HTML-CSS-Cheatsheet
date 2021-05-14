@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selectors and Specificity</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>David's Cheatsheet for CSS Selectors and Specificity</h1>
+    <h2>What is the purpose?</h2>
+    <p>The purpose of CSS Specificity is to ensure the correct style is applied to certain elements in the correct order.  For example if two CSS rules were written targeting one element, the browser would need to know which CSS rule should be applied.</p>
+    <h2>How its applied</h2>
+    <table class="center">
+        <thead>
+            <tr class="odd">
+                <th colspan="2">Types of Specificity</th>
+            </tr>
+            <tr class="even">
+                <th scope="col">Type of Rule</th>
+                <th scope="col" >Explanation</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="odd">
+                <td>Last Rule</td>
+                <td>If the two rules in CSS are identical then the latter will be applied</td>
+            </tr>
+            <tr class="even">
+                <td>Specificity</td>
+                <td>If one selector is more specific than the other then it will be applied</td>
+            </tr>
+            <tr class="odd">
+                <td>!important</td>
+                <td>You can add this after any property to make it president over all other rules.  It is important that this isnt of used within a page.</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>In what order is the Specificity?</h2>
+    <table class="center">
+        <thead>
+            <tr class="odd">
+                <th colspan="2">Highest to Lowest Priority</th>
+            </tr>
+            <tr class="even">
+                <th>Type</th>
+                <th>Code Used in CSS</th>
+            </tr>
+            <tr class="odd">
+                <td>Important Coding</td>
+                <td>!important</td>
+            </tr>
+            <tr class="even">
+                <td>ID Selector</td>
+                <td>[#] Hashtag Name</td>
+            </tr>
+            <tr class="odd">
+                <td>Class Selector</td>
+                <td>[.] Dot Classname</td>
+            </tr>
+            <tr class="even">
+                <td>Type Elements e.g. H1 or Pseudo </td>
+                <td>Type Name</td>
+            </tr>
+        </thead>
+    </table>
+    <p id="explanation">It is important to be aware of multiple classifications for example h1.even (all h1 with an class of even) or h1#time (all h1 with  a ID of time)  will be more specific than a class or ID on its own. So h1#time would be more specific than h1 but not more than #time or h1.time would be more specific than h1 but not more than .time</p>
+
+</body>
+</html>

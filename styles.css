@@ -1,0 +1,47 @@
+
+body {
+    text-align: center;
+    background-color: blanchedalmond;
+}
+h1 {
+    color: blue;
+    font-size: 32px;
+}
+h2 {
+    font-family: "Brush Script MT";
+    font-style: normal;
+}
+
+p { 
+    background-color: darkgreen;
+    color: coral;
+}
+
+#explanation {
+    color: cyan;
+}
+p#explanation {
+    background-color: cornflowerblue;
+    color: cornsilk;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* THIS IS THE TABLE CSS CODE */
+.center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+td {
+    max-width: 300px;
+    min-width: none;
+    padding: auto;
+}
+thead {
+    text-align: center;
+}
+tr.odd {
+    background-color: lightgray;
+}
+tr.even {
+    background-color: lightgreen;
+}
